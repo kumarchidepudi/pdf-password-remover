@@ -95,7 +95,7 @@ export default function FileUpload() {
     console.log('💾 Initiating download...');
     const link = document.createElement("a");
     link.href = window.URL.createObjectURL(blob);
-    // link.download = file.name.replace(".pdf", "_unlocked.pdf");
+    link.download = file.name.replace(".pdf", "_unlocked.pdf");
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -132,8 +132,8 @@ export default function FileUpload() {
             className="password-container"
           >
             <input
-              type="text"
-              value={"◆".repeat(password.length)}
+              type="password"
+              value={password}
               placeholder="Enter Password"
               className="luxury-input"
               onChange={handlePasswordChange}

@@ -69,6 +69,7 @@ body {
   box-shadow: 0 3px 20px rgba(0,0,0,0.05);
   font-family: inherit;
   text-align: center;   /* keep diamonds centered */
+  -webkit-text-security: disc; /* Chrome/Safari */
 
 }
 
@@ -91,3 +92,5 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 5px 30px rgba(0,0,0,0.1);
 }
+
+
